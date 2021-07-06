@@ -14,7 +14,31 @@
 </head>
 
 <body>
-    <section class="flex-container">
+    <section id="navigation">
+        <div id="parent">
+            <div id="navbar">
+                <div id="logo">
+                    <ul>
+                        <li><span class="Food">Food </span><Span class="network">Network</Span></li>
+                    </ul>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#home">Home</a>
+                        </li>
+                        <li><a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#recipies">Recipies</a>
+                        </li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home" class="flex-container">
         <div class="half-width">
             <h1 id="top-Margin"> <span class="color-orange">Skip</span> the Diet</h1>
             <h1>Just Eat Healthy</h1>
@@ -30,7 +54,7 @@
         </div>
     </section>
 
-    <section class="flex-container bg-img">
+    <section id="about" class="flex-container bg-img">
         <div class="half-width">
             <img src="Images/male/ras.png" alt="">
         </div>
@@ -47,11 +71,11 @@
         </div>
 
     </section>
-    <section>
+    <section id="recipies">
         <div class="recipies-text">
             <h2 class="snd-head">My Recipies</h2>
             <p>We have varities of Recipies for the general people who what to take meal or snacks. All the Recipies are
-            made of such ingredients that ensuring for good health since 2021.</p>
+                made of such ingredients that ensuring for good health since 2021.</p>
         </div>
 
         <div class="flex-container">
@@ -65,35 +89,63 @@
             <div class="recipes-content">
                 <img src="Images/food/EggTikka.jpg" alt="">
                 <h3>Thai Egg Tikka</h3>
-                <p>Hard boiled eggs marinated in a spicy and flavourful masala and baked to perfection.Transfer the egg tikka onto a serving platter, garnish with onion rings and serve with green chutney and lemon wedge.</p>
+                <p>Hard boiled eggs marinated in a spicy and flavourful masala and baked to perfection.Transfer the egg
+                    tikka onto a serving platter, garnish with onion rings and serve with green chutney and lemon wedge.
+                </p>
             </div>
             <div class="recipes-content">
                 <img src="Images/food/Beef.jpg" alt="">
                 <h3>Beef Steak</h3>
                 <p>In a mini food processor, combine the basil, cilantro, garlic, sambal oelek and fish sauce and pulse
-                until finely chopped. Add the lemon and lime zests and oil and pulse until fairly smooth.</p>
+                    until finely chopped. Add the lemon and lime zests and oil and pulse until fairly smooth.</p>
             </div>
         </div>
 
     </section>
 
-    <section id = "social-content" class="flex-container">     
-            <div>
-                <h1>700k</h1>
-                <p>Youtube Subcribers</p>
-            </div>
-            <div>
-                <h1>2.4m</h1>
-                <p>Instagram Followers</p>
-            </div>
-            <div>
-                <h1>100k</h1>
-                <p>Dribble Short Likes</p>
-            </div>       
+    <section id="social-content" class="flex-container">
+        <div>
+            <h1>700k</h1>
+            <p>Youtube Subcribers</p>
+        </div>
+        <div>
+            <h1>2.4m</h1>
+            <p>Instagram Followers</p>
+        </div>
+        <div>
+            <h1>100k</h1>
+            <p>Dribble Short Likes</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div>
+            <h2>Contact With Us</h2>
+        </div>
+        <div class="form-continer">
+            <form action="">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+
+                <label for="Mobile No">Mobile No</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Your Mobile number..">
+
+                <label for="Email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email..">
+
+                <label for="Comments">Subject</label>
+                <textarea id="comment" name="comment" placeholder="Write Your Comments.."
+                    style="height:200px"></textarea>
+
+                <input class="link-button" type="submit" value="Submit">
+            </form>
+        </div>
+
+
     </section>
 
     <footer>
-        <h1><span id="food">Food </span><span id="network">Network</span></h1>
+        <h1><span class="food">Food </span><span class="network">Network</span></h1>
         <p>Eat healthy to live healthy. Live healthy to live happy.</p>
     </footer>
 </body>
